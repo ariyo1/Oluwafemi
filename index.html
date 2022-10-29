@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = "main.js"></script>
+    <link rel = 'stylesheet' type = 'text/css' href = "main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+</head>
+<body>
+    <form name="contactForm" onsubmit="return validateForm()">
+        <h2>Admission checker</h2>
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" name="name">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="row">
+            <label>Email Address</label>
+            <input type="text" name="email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="row">
+            <label>Mobile Number</label>
+            <input type="text" name="mobile" maxlength="10">
+            <div class="error" id="mobileErr"></div>
+        </div>
+        
+        <div class="row">
+            <label>Gender</label>
+            <div class="form-inline">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            <div class="error" id="genderErr"></div>
+        </div>
+        <div class="row">
+            <label>O level</label>
+            <select name="O level">
+                <option>Mathematics</option>
+                
+            </select>
+            <select name="O level">
+                <option>English</option>
+                
+            </select>
+            <select name="O level">
+                <option>Biology</option>
+                
+            </select>
+            <select name="O level">
+                <option>Physics</option>
+                
+            </select>
+            <select name="O level">
+                <option>Chemistry</option>
+                
+            </select>
+            
+        </div>
+        <div class="row">
+            <label>Number of sittiing</label>
+            <input type="number" name="sitting">
+            <div class="error" id="numbErr">
+        </div>
+        <div class="row">
+            <label>Utme</label>
+            <input type="number" name="ume">
+            <div class="error" id="utmeErr">
+        </div>
+        <div class="row">
+            <label>Putme</label>
+            <input type="text" name="putme">
+            <div class="error" id="putmelErr"></div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>    
+</body>
+</html>
